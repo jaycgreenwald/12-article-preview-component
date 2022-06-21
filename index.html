@@ -11,45 +11,61 @@
   <title>Frontend Mentor | Article preview component</title>
 </head>
 <body>
+
+  <!-- content card -->
   <main class="preview">
-    <div class="preview__hero">
-      <!-- hero images goes here -->
-    </div>
-    <div class="preview__content">
-      <h1 class="preview__article-title">
-        Shift the overall look and feel by adding these wonderful 
-        touches to furniture in your home
-      </h1>
-      <p class="preview__article-summary">
-        Ever been in a room and felt like something was missing? Perhaps 
-        it felt slightly bare and uninviting. I’ve got some simple tips 
-        to help you make any room feel complete.
-      </p>
+    <div class="preview__hero"></div>
+    
+    <!-- used for desktop version -->
+    <div class="preview__column">
+      <!-- main content of article title and summary -->
+      <div class="preview__content">
+        <h1 class="preview__article-title">Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home</h1>
+        <p class="preview__article-summary">Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+      </div>
+
+      <!-- portion of card which includes article details and sharing options -->
       <div class="preview__details">
-        <div class="preview__author-photo">
-          <!-- author photo -->
-        </div>
+        <div class="preview__author-photo"></div>
+      
         <div class="preview__article-info">
-          <h2 class="preview__author-name">
-            Michelle Appleton
-          </h2>
-          <div class="preview__publish-date">
-            28 Jun 2020
-          </div>
-        </div>  
-        <div class="preview__share">
-          SHARE
+          <p class="preview__author-name">Michelle Appleton</p>    
+          <div class="preview__publish-date">28 Jun 2020</div>
         </div>
+
+        <!-- button to open social media links -->
+        <div id="preview-share" class="preview__share">
+          <label for="share-check" class="preview__checkbox" id="preview-checkbox">
+            <img src="images/icon-share-color.svg" id="arrow-img" alt="Share article preview on social media" srcset="">
+          </label>
+          <input type="checkbox" id="share-check">
+        </div>
+
+        <!-- social media links section -->
+        <div class="preview__social" id="preview-social">
+          <p class="preview__section-label">Share</p>
+          <div class="preview__icon-group">
+            <img src="images/icon-facebook.svg" alt="Share this article on Facebook" class="preview__links" srcset="">
+            <img src="images/icon-twitter.svg" alt="Share this article on Twitter" class="preview__links" srcset="">
+            <img src="images/icon-pinterest.svg" alt="Share this article on Pinterest" class="preview__links" srcset="">
+          </div>
+          
+          <!-- button to close the social media section -->
+          <div id="preview-share-close" class="preview__share">
+            <label for="share-check" class="preview__checkbox--blue">
+              <img src="images/icon-share.svg" alt="" srcset="">
+            </label>
+            <input type="checkbox" id="share-check">
+          </div>
+        </div>
+        <!-- end social media links section -->
+        
       </div>
     </div>
   </main>
-<!-- 
-  <footer class="footer">
-    <div class="footer__attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="footer__links" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#" target="_blank">Your Name Here</a>.
-    </div>
-  </footer> 
-   -->
+
+<script src="script.js"></script>
 </body>
 </html>
