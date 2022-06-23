@@ -15,9 +15,7 @@
   <!-- content card -->
   <main class="preview">
     <div class="preview__hero"></div>
-    
-    <!-- used for desktop version -->
-    <div class="preview__column">
+    <div class="preview__column">  <!-- used with desktop version only -->
       <!-- main content of article title and summary -->
       <div class="preview__content">
         <h1 class="preview__article-title">Shift the overall look and feel by adding these wonderful 
@@ -29,7 +27,6 @@
       <!-- portion of card which includes article details and sharing options -->
       <div class="preview__details">
         <div class="preview__author-photo"></div>
-      
         <div class="preview__article-info">
           <p class="preview__author-name">Michelle Appleton</p>    
           <div class="preview__publish-date">28 Jun 2020</div>
@@ -47,12 +44,11 @@
         <div class="preview__social" id="preview-social">
           <p class="preview__section-label">Share</p>
           <div class="preview__icon-group">
-            <img src="images/icon-facebook.svg" alt="Share this article on Facebook" class="preview__links" srcset="">
-            <img src="images/icon-twitter.svg" alt="Share this article on Twitter" class="preview__links" srcset="">
-            <img src="images/icon-pinterest.svg" alt="Share this article on Pinterest" class="preview__links" srcset="">
+            <a href="www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Share this article on Facebook" class="preview__links" srcset=""></a>
+            <a href="www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt="Share this article on Twitter" class="preview__links" srcset=""></a>
+            <a href="www.pinterest.com" target="_blank"><img src="images/icon-pinterest.svg" alt="Share this article on Pinterest" class="preview__links" srcset=""></a>
           </div>
           
-          <!-- button to close the social media section -->
           <div id="preview-share-close" class="preview__share">
             <label for="share-check" class="preview__checkbox--blue">
               <img src="images/icon-share.svg" alt="" srcset="">

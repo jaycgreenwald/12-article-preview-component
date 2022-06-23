@@ -47,25 +47,23 @@ body {
         0px 100px 80px rgba(0, 0, 0, 0.02);
 }
 
-/* hero image */
 .preview__hero {
-    width: 327px;
-    height: 200px;
+    width: 20.4375rem;
+    height: 12.5rem;
     border-radius: 12px 12px 0 0;
     background-image: url("../images/drawers.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -16px;
+    background-position-y: -1rem;
 }
 
 .preview__column {
-    padding: 36px 32px 20px 32px;
+    padding: 2.25rem 2rem 1.25rem 2rem;
 }
 
 /* title and article preview group */
 .preview__content {
     width: 100%;
-    /* padding: 35px 34px 27px 33px; */
 }
 
 /* article title */
@@ -84,179 +82,150 @@ body {
     line-height: 1.55;
     letter-spacing: 0.2px;
     color: var(--desaturated-dark-blue);
-    padding: 12px 3px 32px 0;
+    padding: 0.75rem 0.1875rem 2rem 0;
 }
 
-/* details group including author photo and share options */
+/* author photo and share options */
 .preview__details {
     width: 100%;
     display: flex;
     align-items: center;
-    /* padding: 0 33px 20px 33px; */
 }
 
-
-    /* photo of article author */
-    .preview__author-photo {
-        background-image: url(../images/avatar-michelle.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px; /* <--- is height necessary on square shapes? */
-        margin: 0 16px 0 0;
-    }
-
-
-    /* group contains author name and publication date */
-    .preview__article-info {
-        flex-grow: 1;
-    }
-
-        /* article author name */
-        .preview__author-name {
-            color: var(--very-dark-grayish-blue);
-            font-size: .8rem;
-            font-weight: 700;
-            padding: 0 0 2px 0;
-            /* line-height: 2; */
-        }
-
-        /* article publication date */
-        .preview__publish-date {
-            color: var(--desaturated-dark-blue);
-            font-size: .75rem;
-            font-weight: 500;
-            letter-spacing: .5px;
-        }
-
-
-    /* open social links code */
-    /* open social links code */
-    /* open social links code */
-    .preview__share {
-        position: relative;
-    }
-    
-
-    /* label for the checkbox input */
-    /* label for the checkbox input */
-    .preview__checkbox {
-        background-color: var(--light-grayish-blue);
-        border-radius: 50%;
-        width: 32px;
-        height: 32px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        appearance: none;
-    }
-
-    /* actual checkbox  */
-    /* actual checkbox  */
-    #share-check {
-        opacity: 0;
-        position: absolute;
-        left: -100vw;
-    }
-
-    #arrow-img {
-
-    }
-
-    .preview__checkbox--blue {
-        background-color: var(--desaturated-dark-blue);
-        border-radius: 50%;
-        width: 32px;
-        height: 32px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 0 0 2px; 
+.preview__author-photo {
+    background-image: url(../images/avatar-michelle.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 0 16px 0 0;
+    padding: 20px;
 }
 
-/* social media links cover preview__details */
+/* contains author name and publication date */
+.preview__article-info {
+    flex-grow: 1;
+}
+
+.preview__author-name {
+    color: var(--very-dark-grayish-blue);
+    font-size: .8rem;
+    font-weight: 700;
+    padding: 0 0 0.125rem 0;
+}
+
+.preview__publish-date {
+    color: var(--desaturated-dark-blue);
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+/* open social links code */
+.preview__share {
+    position: relative;
+}
+
+/* label for the checkbox input */
+.preview__checkbox {
+    background-color: var(--light-grayish-blue);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* actual checkbox  */
+#share-check {
+    opacity: 0;
+    position: absolute;
+    left: -100vw;
+    transform: scale(1.7);
+}
+
+.preview__checkbox--blue {
+    background-color: var(--desaturated-dark-blue);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0 0 2px; 
+}
+
+/* social media links covers preview__details */
 .preview__social {
-    /* display: flex; */
+    background-color: var(--very-dark-grayish-blue);
     display: none;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--very-dark-grayish-blue);
-    width: 327px;
-    /* height: 72px; */
     position: absolute;
+    width: 20.4375rem;
     border-radius: 0 0 12px 12px;
-    bottom: 0;
     left: 0;
-    padding: 17px 33px 23px 33px;
+    bottom: 0;
+    padding: 1.0625rem 2.0625rem 1.4375rem 2.0625rem;
 }
 
-    /* decorative label */
-    .preview__section-label {
-        font-size: 13px;
-        text-transform: uppercase;
-        color: var(--grayish-blue);
-        letter-spacing: 5px;
-    }
+/* decorative label */
+.preview__section-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    letter-spacing: 5px;
+}
 
-    /* social media icons grouped for formatting */
-    .preview__icon-group {
-        display: flex;
-        align-items: center;
-        padding: 0 38px 0 0;
-    }
+.preview__icon-group {
+    display: flex;
+    align-items: center;
+    padding: 0 2.375rem 0 0;
+}
 
-        /* style each icon */
-        .preview__links {
-            padding: 0 8px 0 8px;
-        }
-
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+/* for icons */
+.preview__links {
+    padding: 0 0.5rem 0 0.5rem;
 }
 
 @media screen and (min-width: 875px) {
     
     .preview {
-        width: 730px;
+        width: 45.625rem;
         border-radius: 10px;
         flex-direction: row;
     }
-    
-    
+      
     .preview__hero {
-        width: 285px;
-        height: 280px;
-        border-radius: 10px 0 0 10px;
         background-image: url("../images/drawers.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: 0px;
+        border-radius: 10px 0 0 10px;
+        width: 17.8125rem;
+        height: 17.5rem;
     }
     
     .preview__column {
         display: flex;
         flex-direction: column;
-        padding: 33px 40px 30px 40px;
+        padding: 2.0625rem 2.5rem 1.875rem 2.5rem;
     }
     
     .preview__content {
-        width: 364px;
-        /* padding: 31px 41px 17px 41px; */
+        width: 22.75rem;
     }
     
     .preview__article-title {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.4;
     }
     
     .preview__article-summary {
-        padding: 11px 0 21px 0;
+        padding: 0.6875rem 0 1.3125rem 0;
     }
 
     .preview__author-name {
@@ -264,31 +233,29 @@ body {
     }
     
     .preview__social {
+        background-color: var(--very-dark-grayish-blue);
         display: none;
-        /* display: flex; */
         justify-content: space-between;
         align-items: center;
-        background-color: var(--very-dark-grayish-blue);
-        width: 248px;
-        /* height: 55px; */
         position: absolute;
+        width: 15.5rem;
         border-radius: 10px;
-        bottom: 96px;
-        left: 549px;
-        padding: 18px 28px 18px 28px;
+        bottom: 6rem;
+        left: 34.3125rem;
+        padding: 1.125rem 1.75rem 1.125rem 1.75rem;
     }
 
     .preview__social::after {
         content: '';
         position: absolute;
-        left: calc(50% - 12px);
         top: 100%;
+        left: calc(50% - 12px);
         border: 12px solid var(--grayish-blue);
         border-color: var(--very-dark-grayish-blue) transparent transparent transparent;
     }
 
     .preview__section-label {
-        padding: 0 0 0 8px;
+        padding: 0 0 0 0.5rem;
     }
 
     .preview__checkbox--blue {
@@ -300,7 +267,7 @@ body {
     }
 
     .preview__icon-group {
-        padding: 0 0 0 10px;
+        padding: 0 0 0 0.625rem;
     }
 
 }
